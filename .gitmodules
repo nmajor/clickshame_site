@@ -1,0 +1,3 @@
+[submodule "dist"]
+	path = dist
+	url = git@github.com:nmajor/clickshame_site_static.git
