@@ -92,7 +92,8 @@ module.exports = function(grunt) {
         files: [{
           expand: true,
           cwd: '<%= config.src %>/templates/assets',
-          src: ['*.scss'],
+          extDot: 'last',
+          src: ['*.scss', '!_*.scss'],
           dest: '<%= config.src %>/assets/css',
           ext: '.css'
         }]
@@ -104,6 +105,7 @@ module.exports = function(grunt) {
         files: [{
           expand: true,
           cwd: '<%= config.src %>/assets/css',
+          extDot: 'last',
           src: ['*.css', '!*.min.css', '!*.css.map'],
           dest: '<%= config.dist %>/assets/css/',
           ext: '.min.css'
@@ -116,6 +118,7 @@ module.exports = function(grunt) {
         files: [{
           expand: true,
           cwd: '<%= config.src %>/assets/js',
+          extDot: 'last',
           src: ['*.js', '!*.min.js'],
           dest: '<%= config.dist %>/assets/js/',
           ext: '.min.js'

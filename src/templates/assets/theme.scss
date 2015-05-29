@@ -1,48 +1,24 @@
 $pop-color: #ff1a1a;
 $pop-color-dark: darken( $pop-color, 10% );
+$pop-color-very-dark: darken( $pop-color-dark, 25% );
+$off-white: rgb(241, 241, 241);
+$off-black: #22272a;
 
-#logo-text {
-  color: $pop-color;
-  font-size: 5em;
-  font-weight: bold;
-  line-height: 0.6em;
-  margin-bottom: 0.3em;
+body {
+  color: $off-black;
+}
 
-  &:hover {
-    color: $pop-color-dark;
-  }
-}
-#hello {
-  width: 100%;
-  padding-top: 5em;
-  text-align: center;
-}
-#logo {
-  cursor: pointer;
-  &:hover { text-decoration: none; }
-}
-#intro{
-  font-weight: bold;
-  font-size: 9.8em;
-  border-top: 2px solid #22272a;
-  letter-spacing: -0.05em;
-}
-#stats {
-  margin-bottom: 2em;
-  margin-top: 1em;
-  font-size: 1.8em;
+@import '_stats';
+@import '_hello';
+@import '_ticker';
+@import '_extensions';
+@import '_instructions';
 
-  .stat{
-    font-weight: bold;
-    font-size: 1.3em;
-  }
-}
-#clickbait-ticker {
-  img {
-    height: 20em;
-  }
-}
-#instructions {
-  margin-top: 3em;
-  img { width: 100%; }
-}
+
+
+
+
+
+
+
+

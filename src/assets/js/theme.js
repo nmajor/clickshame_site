@@ -1,13 +1,12 @@
 $(window).load(function () {
 
-  $("#clickbait-ticker").endlessScroll({
-      width: '100%',
-      height: '20em',
-      steps: -1,
-      speed: 10,
-      mousestop: false
+  $( "#clickbait-ticker" ).rcarousel({
+    auto: { enabled: true, direction: "next", interval: 5000 },
+    visible: 8,
+    step: 1,
+    height: 300,
+    width: 400,
+    margin: 50,
   });
-
-  // Recopy the previous line to add scrolling to other divs.
 
 });

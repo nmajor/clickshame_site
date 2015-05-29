@@ -1,0 +1,16 @@
+#stats-wrapper {
+  text-align: center;
+  background: $off-black;
+  color: #fff;
+  padding-top: 8em;
+  padding-bottom: 9em;
+}
+#stats {
+  font-size: 2.3em;
+  font-weight: 200;
+
+  .stat{
+    font-weight: bold;
+    font-size: 1.3em;
+  }
+}

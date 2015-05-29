@@ -1,0 +1,29 @@
+#hello-wrapper {
+  margin: 12em 0;
+  width: 100%;
+  text-align: center;
+}
+#logo-text {
+  color: $pop-color;
+  font-size: 5em;
+  font-weight: bold;
+  line-height: 0.6em;
+  margin-bottom: 0.3em;
+
+  &:hover {
+    color: $pop-color-dark;
+  }
+}
+#logo {
+  cursor: pointer;
+  &:hover { text-decoration: none; }
+}
+#intro{
+  font-weight: bold;
+  font-size: 9.8em;
+  letter-spacing: -0.05em;
+}
+
+.hello-chrome-extension {
+  margin-top: 9em;
+}

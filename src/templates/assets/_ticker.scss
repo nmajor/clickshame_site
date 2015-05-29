@@ -1,0 +1,14 @@
+#ticker-wrapper {
+  background: $off-white;
+  padding-top: 5em;
+  padding-bottom: 10em;
+}
+#clickbait-ticker {
+  overflow-x: scroll;
+  white-space: nowrap;
+
+  img {
+    height: 20em;
+    display: inline-block;
+  }
+}

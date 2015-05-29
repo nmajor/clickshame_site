@@ -1,3 +1,25 @@
+body {
+  color: #22272a; }
+
+#stats-wrapper {
+  text-align: center;
+  background: #22272a;
+  color: #fff;
+  padding-top: 8em;
+  padding-bottom: 9em; }
+
+#stats {
+  font-size: 2.3em;
+  font-weight: 200; }
+  #stats .stat {
+    font-weight: bold;
+    font-size: 1.3em; }
+
+#hello-wrapper {
+  margin: 12em 0;
+  width: 100%;
+  text-align: center; }
+
 #logo-text {
   color: #ff1a1a;
   font-size: 5em;
@@ -7,11 +29,6 @@
   #logo-text:hover {
     color: #e60000; }
 
-#hello {
-  width: 100%;
-  padding-top: 5em;
-  text-align: center; }
-
 #logo {
   cursor: pointer; }
   #logo:hover {
@@ -20,23 +37,50 @@
 #intro {
   font-weight: bold;
   font-size: 9.8em;
-  border-top: 2px solid #22272a;
   letter-spacing: -0.05em; }
 
-#stats {
-  margin-bottom: 2em;
-  margin-top: 1em;
-  font-size: 1.8em; }
-  #stats .stat {
-    font-weight: bold;
-    font-size: 1.3em; }
+.hello-chrome-extension {
+  margin-top: 9em; }
 
-#clickbait-ticker img {
-  height: 20em; }
+#ticker-wrapper {
+  background: #f1f1f1;
+  padding-top: 5em;
+  padding-bottom: 10em; }
 
-#instructions {
-  margin-top: 3em; }
-  #instructions img {
+#clickbait-ticker {
+  overflow-x: scroll;
+  white-space: nowrap; }
+  #clickbait-ticker img {
+    height: 20em;
+    display: inline-block; }
+
+#extensions-wrapper {
+  padding: 10em 0;
+  text-align: center; }
+
+.chrome-extension-link {
+  font-size: 2.4em;
+  color: #22272a;
+  border: 5px solid;
+  padding: .2em .6em; }
+  .chrome-extension-link:hover {
+    color: #9a0000;
+    text-decoration: none; }
+  .chrome-extension-link img {
+    height: 1em;
+    position: relative;
+    top: -5px; }
+
+#instructions-wrapper {
+  padding: 8em 0;
+  background: #670000;
+  color: #fff; }
+  #instructions-wrapper img {
     width: 100%; }
+  #instructions-wrapper h2 {
+    text-align: center; }
+  #instructions-wrapper p {
+    margin: 2em 0;
+    font-size: 1.3em; }
 
 /*# sourceMappingURL=theme.css.map */
