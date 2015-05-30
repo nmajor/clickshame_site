@@ -1,0 +1,30 @@
+#wall-wrapper {
+  background: $off-white;
+  padding: 6em 0;
+
+  h1, h3 {
+    text-align: center;
+    margin-bottom: 1em;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  li {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    white-space: nowrap;
+
+    background-color: #fff;
+    margin: 0.3em;
+    padding: 0.1em 0.5em;
+
+    span {
+      font-weight: bold;
+      margin-right: .5em;
+    }
+  }
+}

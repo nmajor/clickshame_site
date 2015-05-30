@@ -1,0 +1,22 @@
+footer {
+  padding: 8em 0;
+  color: #DBDBDB;
+  background: $off-black;
+  text-align: center;
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+}
+
+.footer-links {
+  li {
+    display: inline;
+    margin: 0 1.5em;
+  }
+}
+.copyright {
+  font-size: 1.5em;
+  font-weight: 200;
+}
