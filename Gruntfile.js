@@ -132,13 +132,21 @@ module.exports = function(grunt) {
         cwd: '<%= config.src %>/assets/fonts',
         src: '**',
         dest: '<%= config.dist %>/assets/fonts/'
-      },
-      images: {
-        expand: true,
-        cwd: '<%= config.src %>/assets/images',
-        src: '**',
-        dest: '<%= config.dist %>/assets/images/'
-      },
+      }
+    },
+
+    imagemin: {
+      dynamic: {
+        options: {
+          optimizationLevel: 4
+        },
+        files: [{
+          expand: true,
+          cwd: '<%= config.src %>/assets/images',
+          src: ['**/*.{png,jpg,gif}'],
+          dest: '<%= config.dist %>/assets/images/'
+        }]
+      }
     },
 
     // Before generating any new files,
@@ -151,6 +159,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
+  grunt.loadNpmTasks('grunt-contrib-imagemin');
 
   grunt.registerTask('server', [
     'build',
@@ -160,6 +169,7 @@ module.exports = function(grunt) {
 
   grunt.registerTask('build', [
     'clean',
+    'imagemin',
     'copy',
     'assemble'
   ]);
