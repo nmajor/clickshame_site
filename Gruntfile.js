@@ -135,7 +135,7 @@ module.exports = function(grunt) {
       },
       favicon: {
         files: [
-          {expand: true, src: ['<%= config.src %>/assets/images/favicon.ico'], dest: '<%= config.dist %>/favicon.ico'}
+          {expand: true, cwd: '<%= config.src %>/assets/images/', src: 'favicon.ico', dest: '<%= config.dist %>/'}
         ]
       }
     },
