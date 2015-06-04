@@ -5,7 +5,7 @@
 }
 #logo-text {
   color: $pop-color;
-  font-size: 5em;
+  font-size: 3.2em;
   font-weight: bold;
   line-height: 0.6em;
   margin-bottom: 0.3em;
@@ -20,10 +20,26 @@
 }
 #intro{
   font-weight: bold;
-  font-size: 9.8em;
+  font-size: 6.2em;
   letter-spacing: -0.05em;
 }
 
 .hello-chrome-extension {
   margin-top: 9em;
+}
+
+@media (min-width: $screen-sm-min) {
+  #intro{
+  }
+  #logo-text {
+  }
+}
+
+@media (min-width: $screen-lg-min) {
+  #intro{
+    font-size: 9.8em;
+  }
+  #logo-text {
+    font-size: 5em;
+  }
 }

@@ -14,3 +14,9 @@
     font-size: 1.3em;
   }
 }
+
+@media (min-width: $screen-md-min) {
+  #stats {
+    div { display: inline-block; }
+  }
+}

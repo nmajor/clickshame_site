@@ -10,3 +10,13 @@
     font-size: 1.3em;
   }
 }
+
+.step {
+  margin-top: 5em;
+}
+
+@media (min-width: $screen-md-min) {
+  .step {
+    margin-top: 0;
+  }
+}

@@ -132,6 +132,11 @@ module.exports = function(grunt) {
         cwd: '<%= config.src %>/assets/fonts',
         src: '**',
         dest: '<%= config.dist %>/assets/fonts/'
+      },
+      favicon: {
+        files: [
+          {expand: true, src: ['<%= config.src %>/assets/images/favicon.ico'], dest: '<%= config.dist %>/favicon.ico'}
+        ]
       }
     },
 

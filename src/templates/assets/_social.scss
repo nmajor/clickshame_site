@@ -2,11 +2,17 @@
   padding: 10em 0;
 }
 .social-header {
-  font-size: 4em;
+  font-size: 2.4em;
   margin-bottom: .4em;
 }
 .social-buttons {
   width: 100%;
   text-align: center;
 }
-.social-footer { margin-top: 1em; }
+.social-footer { margin-top: 1em; font-size: 1.4em; }
+
+@media (min-width: $screen-md-min) {
+  .social-header {
+    font-size: 4em;
+  }
+}

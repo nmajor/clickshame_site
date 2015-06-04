@@ -4,6 +4,10 @@ $pop-color-very-dark: darken( $pop-color-dark, 25% );
 $off-white: rgb(241, 241, 241);
 $off-black: #22272a;
 
+$screen-sm-min: 768px;
+$screen-md-min: 992px;
+$screen-lg-min: 1200px;
+
 body {
   color: $off-black;
 }
@@ -21,6 +25,15 @@ body {
 
 
 
+
+/* Small devices (tablets, 768px and up) */
+/* @media (min-width: $screen-sm-min) { ... } */
+
+/* Medium devices (desktops, 992px and up) */
+/* @media (min-width: $screen-md-min) { ... } */
+
+/* Large devices (large desktops, 1200px and up) */
+/* @media (min-width: $screen-lg-min) { ... } */
 
 
 

@@ -1,5 +1,6 @@
 .chrome-extension-link {
-  font-size: 2.4em;
+  font-size: 1.4em;
+  
   color: $off-black;
   border: 5px solid;
   padding: .2em .6em;
@@ -13,5 +14,11 @@
     height: 1em;
     position: relative;
     top: -5px;
+  }
+}
+
+@media (min-width: $screen-sm-min) {
+  .chrome-extension-link {
+    font-size: 2.4em;
   }
 }
