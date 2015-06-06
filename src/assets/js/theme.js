@@ -41,7 +41,6 @@ $(window).load(function () {
     url: baseUrl+'/strikes/recent?key='+identityKey+'&count=20',
     method: 'GET',
     crossDomain: true,
-    headers: { 'Access-Control-Allow-Origin': '*' },
     }).done(function(result) {
       renderWallElements( strikeWallListElm, result, 'url', false );
     });
@@ -55,7 +54,6 @@ $(window).load(function () {
     url: baseUrl+'/domains/top?key='+identityKey+'&count=20',
     method: 'GET',
     crossDomain: true,
-    headers: { 'Access-Control-Allow-Origin': '*' },
     }).done(function(result) {
       renderWallElements( domainWallListElm, result, 'name', true );
     });
@@ -69,7 +67,6 @@ $(window).load(function () {
     url: baseUrl+'/references/top?key='+identityKey+'&count=20',
     method: 'GET',
     crossDomain: true,
-    headers: { 'Access-Control-Allow-Origin': '*' },
     }).done(function(result) {
       renderWallElements( referenceWallListElm, result, 'url', true );
     });
@@ -80,7 +77,6 @@ $(window).load(function () {
     url: baseUrl+'/identities/total?key='+identityKey,
     method: 'GET',
     crossDomain: true,
-    headers: { 'Access-Control-Allow-Origin': '*' },
     }).done(function(result) {
       $('.identity-total').html(result);
     });
@@ -91,7 +87,6 @@ $(window).load(function () {
     url: baseUrl+'/references/total?key='+identityKey,
     method: 'GET',
     crossDomain: true,
-    headers: { 'Access-Control-Allow-Origin': '*' },
     }).done(function(result) {
       $('.reference-total').html(result);
     });
@@ -102,7 +97,6 @@ $(window).load(function () {
     url: baseUrl+'/domains/total?key='+identityKey,
     method: 'GET',
     crossDomain: true,
-    headers: { 'Access-Control-Allow-Origin': '*' },
     }).done(function(result) {
       $('.domain-total').html(result);
     });
