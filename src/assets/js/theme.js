@@ -1,8 +1,7 @@
-// var baseUrl = 'http://api.clickshame.com';
-// var identityKey = 'y1vGmClD5SHK5u9EoiW8TeSpprGUNlQm40UkVnVv2YSvLAJYBx';
-
-var identityKey = 'rAHHlL1NY61ul4ncm8eP2DCmKUsbWWzYCgb35pADhdK6KVdtE6';
-var baseUrl = 'http://localhost:3000';
+var baseUrl = 'http://api.clickshame.com';
+var identityKey = 'y1vGmClD5SHK5u9EoiW8TeSpprGUNlQm40UkVnVv2YSvLAJYBx';
+// var identityKey = 'rAHHlL1NY61ul4ncm8eP2DCmKUsbWWzYCgb35pADhdK6KVdtE6';
+// var baseUrl = 'http://localhost:3000';
 
 function sendStrike(recaptchaResponse) {
   $.ajax({
