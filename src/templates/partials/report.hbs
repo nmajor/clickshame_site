@@ -1,0 +1,32 @@
+---
+component: report
+---
+<section id="report-wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+
+        <div class="report">
+          <div class="report-data-form">
+            <div class="control">
+              <input type=text class="url" id="report-url" placeholder="Link">
+            </div>
+            <div class="control">
+              <textarea class="comment" id="report-comment" maxlength="140" placeholder="Add a spoiler. Save a click..."></textarea>
+            </div>
+            <div class="control">
+              <input type="hidden" id="report-captcha-response">
+              <button class="btn btn-lg btn-pop btn-block" class="submit" id="report-submit">Submit</button>
+            </div>
+          </div>
+
+          <div class="report-recaptcha-form">
+            <div class="control">
+              <div id="report-recaptcha"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -8,6 +8,15 @@ $screen-sm-min: 768px;
 $screen-md-min: 992px;
 $screen-lg-min: 1200px;
 
+.btn-pop {
+  background: $pop-color-dark;
+  color: #FFF;
+    &:hover {
+      background: darken( $pop-color-dark, 5% );
+      color: #FFF;
+    }
+}
+
 body {
   color: $off-black;
 }
@@ -20,6 +29,7 @@ body {
 @import '_social';
 @import '_mission';
 @import '_wall';
+@import '_report';
 
 @import '_footer';
 

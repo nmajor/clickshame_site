@@ -1,0 +1,41 @@
+#report-wrapper {
+  margin: 6em 0 12em 0;
+}
+
+.report {
+  #report-recaptcha {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .report-recaptcha-form {
+    display: none;
+  }
+
+  .comment {
+    width: 100%;
+    padding: .1em 0.3em;
+    border: 1px solid rgb(236, 230, 230);
+  }
+  .url {
+    width: 100%;
+    padding: .1em 0.3em;
+  }
+  .submit { width: 100%; }
+  .control {
+    text-align: left;
+    font-size: 2em;
+    margin: .5em 0;
+    label {
+      font-weight: 500;
+    }
+  }
+}
+
+@media (min-width: 600px) {
+  .report {
+    #report-recaptcha {
+      width: 50%;
+    }
+  }
+}

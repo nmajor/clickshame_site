@@ -1,3 +1,10 @@
+.btn-pop {
+  background: #e60000;
+  color: #FFF; }
+  .btn-pop:hover {
+    background: #cd0000;
+    color: #FFF; }
+
 body {
   color: #22272a; }
 
@@ -19,7 +26,7 @@ body {
   #stats div {
     display: inline-block; } }
 #hello-wrapper {
-  margin: 12em 0;
+  margin: 12em 0 5em 0;
   width: 100%;
   text-align: center; }
 
@@ -153,6 +160,33 @@ body {
       font-weight: bold;
       margin-right: .5em; }
 
+#report-wrapper {
+  margin: 6em 0 12em 0; }
+
+.report #report-recaptcha {
+  width: 80%;
+  margin: 0 auto; }
+.report .report-recaptcha-form {
+  display: none; }
+.report .comment {
+  width: 100%;
+  padding: .1em 0.3em;
+  border: 1px solid #ece6e6; }
+.report .url {
+  width: 100%;
+  padding: .1em 0.3em; }
+.report .submit {
+  width: 100%; }
+.report .control {
+  text-align: left;
+  font-size: 2em;
+  margin: .5em 0; }
+  .report .control label {
+    font-weight: 500; }
+
+@media (min-width: 600px) {
+  .report #report-recaptcha {
+    width: 50%; } }
 footer {
   padding: 8em 0;
   color: #DBDBDB;
