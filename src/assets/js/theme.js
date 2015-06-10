@@ -5,6 +5,8 @@ var identityKey = 'y1vGmClD5SHK5u9EoiW8TeSpprGUNlQm40UkVnVv2YSvLAJYBx';
 // var baseUrl = 'http://localhost:3000';
 
 function sendStrike(recaptchaResponse) {
+  $('.report-recaptcha-form').hide();
+  $('#report-loader').show();
   $.ajax({
   url: baseUrl+'/strikes',
   method: 'POST',
@@ -13,12 +15,11 @@ function sendStrike(recaptchaResponse) {
     url: $('#report-url').val(),
     comment: $('#report-comment').val(),
     type: 'clickbait',
-    recaptcha_response: $('#report-captcha-response').val()
+    recaptcha_response: recaptchaResponse
   },
   crossDomain: true,
-  }).done(function(result) {
-    console.log('blahsubmittedstrike');
-    console.log(result);
+  }).always(function(result) {
+    $('.report').html('<div class="thanks"><div class="feel-good">How did that feel? Good?</div><div class="check-it-out">Check out the chrome extension below...</div></div>');
   });
 }
 
@@ -32,7 +33,6 @@ function loadCaptcha() {
     }
   });
 }
-loadCaptcha();
 
 $(window).load(function() {
 
@@ -49,8 +49,13 @@ $(window).load(function() {
 
   function bindReport() {
     $('#report-submit').click(function() {
-      $('.report-data-form').hide();
-      $('.report-recaptcha-form').show();
+      if ( $('#report-url').val().length < 5 ) {
+        $('.report-errors').html('Please add a valid URL');
+      } else {
+        $('.report-errors').html('');
+        $('.report-data-form').hide();
+        $('.report-recaptcha-form').show();
+      }
     });
   }
 
@@ -146,5 +151,7 @@ $(window).load(function() {
   getWallStrikes();
   getWallDomains();
   getWallReferences();
+
+  loadCaptcha();
 
 });

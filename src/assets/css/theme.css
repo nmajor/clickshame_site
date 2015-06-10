@@ -1,7 +1,16 @@
 .btn-pop {
   background: #e60000;
   color: #FFF; }
+  .btn-pop:link {
+    background: #cd0000;
+    color: #FFF; }
   .btn-pop:hover {
+    background: #cd0000;
+    color: #FFF; }
+  .btn-pop:active {
+    background: #cd0000;
+    color: #FFF; }
+  .btn-pop:visited {
     background: #cd0000;
     color: #FFF; }
 
@@ -97,6 +106,11 @@ body {
   padding: 8em 0;
   background: #22272a;
   color: #fff; }
+  #instructions-wrapper h1 {
+    text-align: center;
+    font-size: 4em;
+    font-weight: 200;
+    margin-bottom: 1.7em; }
   #instructions-wrapper img {
     width: 100%; }
   #instructions-wrapper h2 {
@@ -104,6 +118,11 @@ body {
   #instructions-wrapper p {
     margin: 2em 0;
     font-size: 1.3em; }
+
+.num-dot {
+  border: 1px solid;
+  border-radius: 50%;
+  padding: 0.1em 0.4em; }
 
 .step {
   margin-top: 5em; }
@@ -161,28 +180,44 @@ body {
       margin-right: .5em; }
 
 #report-wrapper {
-  margin: 6em 0 12em 0; }
+  margin: 6em 0 9em 0; }
 
-.report #report-recaptcha {
-  width: 80%;
-  margin: 0 auto; }
-.report .report-recaptcha-form {
-  display: none; }
-.report .comment {
-  width: 100%;
-  padding: .1em 0.3em;
-  border: 1px solid #ece6e6; }
-.report .url {
-  width: 100%;
-  padding: .1em 0.3em; }
-.report .submit {
-  width: 100%; }
-.report .control {
-  text-align: left;
-  font-size: 2em;
-  margin: .5em 0; }
-  .report .control label {
-    font-weight: 500; }
+.report {
+  height: 250px; }
+  .report #report-loader {
+    display: none; }
+  .report #report-recaptcha {
+    width: 80%;
+    margin: 0 auto; }
+  .report .feel-good {
+    text-align: center;
+    color: #cd0000;
+    font-size: 2.2em; }
+  .report .check-it-out {
+    text-align: center;
+    color: #cd0000;
+    font-size: 1.3em; }
+  .report .report-errors {
+    color: #cd0000;
+    font-size: 0.8em;
+    font-style: italic; }
+  .report .report-recaptcha-form {
+    display: none; }
+  .report .comment {
+    width: 100%;
+    padding: .1em 0.3em;
+    border: 1px solid #ece6e6; }
+  .report .url {
+    width: 100%;
+    padding: .1em 0.3em; }
+  .report .submit {
+    width: 100%; }
+  .report .control {
+    text-align: left;
+    font-size: 2em;
+    margin: .5em 0; }
+    .report .control label {
+      font-weight: 500; }
 
 @media (min-width: 600px) {
   .report #report-recaptcha {
@@ -204,6 +239,51 @@ footer {
   font-size: 1.5em;
   font-weight: 200; }
 
+.spinner {
+  margin: 100px auto;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  text-align: center;
+  -webkit-animation: rotate 2.0s infinite linear;
+  animation: rotate 2.0s infinite linear; }
+
+.dot1, .dot2 {
+  width: 60%;
+  height: 60%;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  background-color: #ff1a1a;
+  border-radius: 100%;
+  -webkit-animation: bounce 2.0s infinite ease-in-out;
+  animation: bounce 2.0s infinite ease-in-out; }
+
+.dot2 {
+  top: auto;
+  bottom: 0px;
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s; }
+
+@-webkit-keyframes rotate {
+  100% {
+    -webkit-transform: rotate(360deg); } }
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg); } }
+@-webkit-keyframes bounce {
+  0%, 100% {
+    -webkit-transform: scale(0); }
+  50% {
+    -webkit-transform: scale(1); } }
+@keyframes bounce {
+  0%, 100% {
+    transform: scale(0);
+    -webkit-transform: scale(0); }
+  50% {
+    transform: scale(1);
+    -webkit-transform: scale(1); } }
 /* Small devices (tablets, 768px and up) */
 /* @media (min-width: $screen-sm-min) { ... } */
 /* Medium devices (desktops, 992px and up) */
