@@ -1,0 +1,21 @@
+#small-header-wrapper {
+  padding: 3em 0;
+  text-align: center;
+
+  .logo-image {
+    height: 3em;
+  }
+  .logo-text {
+    color: $pop-color;
+    font-size: 2em;
+    font-weight: bold;
+    position: relative;
+    top: 0.3em;
+
+    &:hover {
+      color: $pop-color-dark;
+    }
+    font-size: 2em;
+    display: inline-block;
+  }
+}
