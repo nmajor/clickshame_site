@@ -36,15 +36,20 @@ body {
 
 @import '_stats';
 @import '_hello';
+@import '_report';
 @import '_ticker';
 @import '_extensions';
 @import '_instructions';
 @import '_social';
 @import '_mission';
 @import '_wall';
-@import '_report';
+@import '_contact';
 
 @import '_footer';
+
+@import '_small-header';
+
+@import '_thanks';
 
 .spinner {
   margin: 100px auto;

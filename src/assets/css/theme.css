@@ -19,7 +19,7 @@ body {
 
 #stats-wrapper {
   text-align: center;
-  background: #670000;
+  background: #22272a;
   color: #fff;
   padding-top: 8em;
   padding-bottom: 9em; }
@@ -67,6 +67,49 @@ body {
 
   #logo-text {
     font-size: 5em; } }
+#report-wrapper {
+  margin: 6em 0 9em 0; }
+
+.report {
+  height: 250px; }
+  .report #report-loader {
+    display: none; }
+  .report #report-recaptcha {
+    width: 80%;
+    margin: 0 auto; }
+  .report .feel-good {
+    text-align: center;
+    color: #cd0000;
+    font-size: 2.2em; }
+  .report .check-it-out {
+    text-align: center;
+    color: #cd0000;
+    font-size: 1.3em; }
+  .report .report-errors {
+    color: #cd0000;
+    font-size: 0.8em;
+    font-style: italic; }
+  .report .report-recaptcha-form {
+    display: none; }
+  .report .comment {
+    width: 100%;
+    padding: .1em 0.3em;
+    border: 1px solid #ece6e6; }
+  .report .url {
+    width: 100%;
+    padding: .1em 0.3em; }
+  .report .submit {
+    width: 100%; }
+  .report .control {
+    text-align: left;
+    font-size: 2em;
+    margin: .5em 0; }
+    .report .control label {
+      font-weight: 500; }
+
+@media (min-width: 600px) {
+  .report #report-recaptcha {
+    width: 50%; } }
 #ticker-wrapper {
   background: #f1f1f1;
   padding-top: 5em;
@@ -104,7 +147,7 @@ body {
     font-size: 2.4em; } }
 #instructions-wrapper {
   padding: 8em 0;
-  background: #22272a;
+  background: #670000;
   color: #fff; }
   #instructions-wrapper h1 {
     text-align: center;
@@ -149,7 +192,7 @@ body {
   .social-header {
     font-size: 4em; } }
 #mission-wrapper {
-  background: #670000;
+  background: #22272a;
   color: #fff;
   padding: 8em 0; }
   #mission-wrapper p {
@@ -159,7 +202,7 @@ body {
     letter-spacing: .02em; }
 
 #wall-wrapper {
-  background: #f1f1f1;
+  background: #fff;
   padding: 6em 0; }
   #wall-wrapper h1, #wall-wrapper h3 {
     text-align: center;
@@ -179,53 +222,16 @@ body {
       font-weight: bold;
       margin-right: .5em; }
 
-#report-wrapper {
-  margin: 6em 0 9em 0; }
+#contact-wrapper {
+  background: #f1f1f1;
+  padding: 7em 0 9em 0; }
+  #contact-wrapper h1, #contact-wrapper h5 {
+    text-align: center; }
 
-.report {
-  height: 250px; }
-  .report #report-loader {
-    display: none; }
-  .report #report-recaptcha {
-    width: 80%;
-    margin: 0 auto; }
-  .report .feel-good {
-    text-align: center;
-    color: #cd0000;
-    font-size: 2.2em; }
-  .report .check-it-out {
-    text-align: center;
-    color: #cd0000;
-    font-size: 1.3em; }
-  .report .report-errors {
-    color: #cd0000;
-    font-size: 0.8em;
-    font-style: italic; }
-  .report .report-recaptcha-form {
-    display: none; }
-  .report .comment {
-    width: 100%;
-    padding: .1em 0.3em;
-    border: 1px solid #ece6e6; }
-  .report .url {
-    width: 100%;
-    padding: .1em 0.3em; }
-  .report .submit {
-    width: 100%; }
-  .report .control {
-    text-align: left;
-    font-size: 2em;
-    margin: .5em 0; }
-    .report .control label {
-      font-weight: 500; }
-
-@media (min-width: 600px) {
-  .report #report-recaptcha {
-    width: 50%; } }
 footer {
   padding: 8em 0;
   color: #DBDBDB;
-  background: #22272a;
+  background: #670000;
   text-align: center; }
   footer ul {
     list-style-type: none;
@@ -238,6 +244,28 @@ footer {
 .copyright {
   font-size: 1.5em;
   font-weight: 200; }
+
+#small-header-wrapper {
+  padding: 3em 0;
+  text-align: center; }
+  #small-header-wrapper .logo-image {
+    height: 3em; }
+  #small-header-wrapper .logo-text {
+    color: #ff1a1a;
+    font-size: 2em;
+    font-weight: bold;
+    position: relative;
+    top: 0.3em;
+    font-size: 2em;
+    display: inline-block; }
+    #small-header-wrapper .logo-text:hover {
+      color: #e60000; }
+
+#thanks-wrapper {
+  text-align: center;
+  padding: 6em 0; }
+  #thanks-wrapper h1 {
+    margin-bottom: 5em; }
 
 .spinner {
   margin: 100px auto;
