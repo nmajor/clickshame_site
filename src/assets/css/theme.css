@@ -68,7 +68,7 @@ body {
   #logo-text {
     font-size: 5em; } }
 #report-wrapper {
-  margin: 6em 0 9em 0; }
+  margin: 6em 0 6em 0; }
 
 .report {
   height: 250px; }
@@ -126,14 +126,24 @@ body {
     border: 2px solid; }
 
 #extensions-wrapper {
-  padding: 10em 0;
+  padding: 0 0 10em 0;
   text-align: center; }
 
 .chrome-extension-link {
   font-size: 1.4em;
   color: #22272a;
   border: 5px solid;
-  padding: .2em .6em; }
+  padding: .2em .6em;
+  display: block; }
+  .chrome-extension-link:link {
+    text-decoration: none; }
+  .chrome-extension-link:visited {
+    color: #9a0000;
+    text-decoration: none;
+    color: #22272a; }
+  .chrome-extension-link:active {
+    color: #9a0000;
+    text-decoration: none; }
   .chrome-extension-link:hover {
     color: #9a0000;
     text-decoration: none; }
@@ -144,7 +154,7 @@ body {
 
 @media (min-width: 768px) {
   .chrome-extension-link {
-    font-size: 2.4em; } }
+    font-size: 1.8em; } }
 #instructions-wrapper {
   padding: 8em 0;
   background: #670000;

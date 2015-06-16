@@ -20,6 +20,10 @@ function sendStrike(recaptchaResponse) {
   crossDomain: true,
   }).always(function(result) {
     $('.report').html('<div class="thanks"><div class="feel-good">How did that feel? Good?</div><div class="check-it-out">Check out the chrome extension below...</div></div>');
+    setTimeout(function(){
+      $('.thank').hide();
+      $('.report-data-form').show();
+    }, 5000);
   });
 }
 
