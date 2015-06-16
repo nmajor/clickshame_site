@@ -69,6 +69,8 @@ body {
     font-size: 5em; } }
 #report-wrapper {
   margin: 6em 0 6em 0; }
+  #report-wrapper .report-thanks {
+    display: none; }
 
 .report {
   height: 250px; }
@@ -210,6 +212,17 @@ body {
     font-size: 1.2em;
     font-weight: 200;
     letter-spacing: .02em; }
+  #mission-wrapper .def {
+    margin: 2em; }
+  #mission-wrapper .def-word {
+    font-weight: bold;
+    font-size: 2.6em; }
+  #mission-wrapper .def-speech {
+    font-weight: 200;
+    font-size: 1.6em; }
+  #mission-wrapper .def-type {
+    font-style: italic;
+    font-size: 1.4em; }
 
 #wall-wrapper {
   background: #fff;
