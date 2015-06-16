@@ -63,6 +63,11 @@ $(window).load(function() {
     });
   }
 
+  function countUp(elmId, num) {
+    var numAnim = new CountUp(elmId, 0, num);
+    numAnim.start();
+  }
+
   function getCompositeScore(scores) {
     return scores.filter(function(score) { return score.type === 'composite'; })[0].value;
   }
@@ -122,7 +127,8 @@ $(window).load(function() {
     method: 'GET',
     crossDomain: true,
     }).done(function(result) {
-      $('.identity-total').html(result);
+      countUp("identity-total", result);
+      // $('.identity-total').html(result);
     });
   }
 
@@ -132,7 +138,8 @@ $(window).load(function() {
     method: 'GET',
     crossDomain: true,
     }).done(function(result) {
-      $('.reference-total').html(result);
+      countUp("reference-total", result);
+      // $('.reference-total').html(result);
     });
   }
 
@@ -142,7 +149,8 @@ $(window).load(function() {
     method: 'GET',
     crossDomain: true,
     }).done(function(result) {
-      $('.domain-total').html(result);
+      countUp("domain-total", result);
+      // $('.domain-total').html(result);
     });
   }
 
