@@ -1,8 +1,8 @@
-var baseUrl = 'http://api.clickshame.com';
+// var baseUrl = 'http://api.clickshame.com';
 var identityKey = 'y1vGmClD5SHK5u9EoiW8TeSpprGUNlQm40UkVnVv2YSvLAJYBx';
 
 // var identityKey = 'rAHHlL1NY61ul4ncm8eP2DCmKUsbWWzYCgb35pADhdK6KVdtE6';
-// var baseUrl = 'http://localhost:3000';
+var baseUrl = 'http://localhost:3000';
 
 function sendStrike(recaptchaResponse) {
   $('.report-recaptcha-form').hide();
@@ -70,15 +70,11 @@ $(window).load(function() {
     numAnim.start();
   }
 
-  function getCompositeScore(scores) {
-    return scores.filter(function(score) { return score.type === 'composite'; })[0].value;
-  }
-
   function renderWallElements(elm, dataArray, attr, includeScore) {
     var score;
     for(var i=0; i<dataArray.length; i++) {
       if ( includeScore ) {
-        score = getCompositeScore(dataArray[i].Scores);
+        score = dataArray[i].score;
         elm.append('<li><span class="score">'+score+'</span>'+dataArray[i][attr]+'</li>');
       } else { elm.append('<li>'+dataArray[i][attr]+'</li>'); }
     }
