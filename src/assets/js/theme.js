@@ -51,8 +51,6 @@ $(window).load(function() {
     margin: 50,
   });
 
-  SocialShareKit.init();
-
   function bindReport() {
     $('#report-submit').click(function() {
       if ( $('#report-url').val().length < 5 ) {
