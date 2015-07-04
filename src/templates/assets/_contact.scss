@@ -2,6 +2,14 @@
   background: $off-white;
   padding: 7em 0 9em 0;
 
+  .contact-instructions {
+    span {
+      margin: 0 15px;
+      font-size: 1.4em;
+    }
+    text-align: center;
+  }
+
   h1, h3, h5{
     text-align: center;
   }

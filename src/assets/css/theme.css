@@ -248,6 +248,11 @@ body {
 #contact-wrapper {
   background: #f1f1f1;
   padding: 7em 0 9em 0; }
+  #contact-wrapper .contact-instructions {
+    text-align: center; }
+    #contact-wrapper .contact-instructions span {
+      margin: 0 15px;
+      font-size: 1.4em; }
   #contact-wrapper h1, #contact-wrapper h3, #contact-wrapper h5 {
     text-align: center; }
 
