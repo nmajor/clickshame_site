@@ -19,11 +19,10 @@ function sendStrike(recaptchaResponse) {
   },
   crossDomain: true,
   }).always(function(result) {
-    $('.report').hide();
+    $('#report-loader').hide();
     $('.report-thanks').show();
     setTimeout(function(){
       $('.report-thanks').hide();
-      $('.report').show();
       $('.report-data-form').show();
     }, 5000);
   });

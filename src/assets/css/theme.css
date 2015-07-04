@@ -72,42 +72,41 @@ body {
   #report-wrapper .report-thanks {
     display: none; }
 
-.report {
-  height: 250px; }
-  .report #report-loader {
-    display: none; }
-  .report #report-recaptcha {
-    width: 80%;
-    margin: 0 auto; }
-  .report .feel-good {
-    text-align: center;
-    color: #cd0000;
-    font-size: 2.2em; }
-  .report .check-it-out {
-    text-align: center;
-    color: #cd0000;
-    font-size: 1.3em; }
-  .report .report-errors {
-    color: #cd0000;
-    font-size: 0.8em;
-    font-style: italic; }
-  .report .report-recaptcha-form {
-    display: none; }
-  .report .comment {
-    width: 100%;
-    padding: .1em 0.3em;
-    border: 1px solid #ece6e6; }
-  .report .url {
-    width: 100%;
-    padding: .1em 0.3em; }
-  .report .submit {
-    width: 100%; }
-  .report .control {
-    text-align: left;
-    font-size: 2em;
-    margin: .5em 0; }
-    .report .control label {
-      font-weight: 500; }
+.report #report-loader {
+  display: none;
+  margin: 0 auto; }
+.report #report-recaptcha {
+  width: 80%;
+  margin: 0 auto; }
+.report .feel-good {
+  text-align: center;
+  color: #cd0000;
+  font-size: 2.2em; }
+.report .check-it-out {
+  text-align: center;
+  color: #cd0000;
+  font-size: 1.3em; }
+.report .report-errors {
+  color: #cd0000;
+  font-size: 0.8em;
+  font-style: italic; }
+.report .report-recaptcha-form {
+  display: none; }
+.report .comment {
+  width: 100%;
+  padding: .1em 0.3em;
+  border: 1px solid #ece6e6; }
+.report .url {
+  width: 100%;
+  padding: .1em 0.3em; }
+.report .submit {
+  width: 100%; }
+.report .control {
+  text-align: left;
+  font-size: 2em;
+  margin: .5em 0; }
+  .report .control label {
+    font-weight: 500; }
 
 @media (min-width: 600px) {
   .report #report-recaptcha {
