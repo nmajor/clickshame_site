@@ -100,29 +100,67 @@ module.exports = function(grunt) {
       }
     },
 
+    // cssmin: {
+    //   target: {
+    //     files: [{
+    //       expand: true,
+    //       cwd: '<%= config.src %>/assets/css',
+    //       extDot: 'last',
+    //       src: ['*.css', '!*.min.css', '!*.css.map'],
+    //       dest: '<%= config.dist %>/assets/css/',
+    //       ext: '.min.css'
+    //     }]
+    //   }
+    // },
+
     cssmin: {
+      options: {
+        shorthandCompacting: false,
+        roundingPrecision: -1,
+      },
       target: {
-        files: [{
-          expand: true,
-          cwd: '<%= config.src %>/assets/css',
-          extDot: 'last',
-          src: ['*.css', '!*.min.css', '!*.css.map'],
-          dest: '<%= config.dist %>/assets/css/',
-          ext: '.min.css'
-        }]
+        files: {
+          '<%= config.dist %>/assets/css/style.min.css': [
+            '<%= config.src %>/assets/css/bootstrap.css',
+            '<%= config.src %>/assets/css/bootstrap-theme.css',
+            '<%= config.src %>/assets/css/rcarousel.css',
+            '<%= config.src %>/assets/css/theme.css'
+          ]
+        }
       }
     },
 
+    // uglify: {
+    //   my_target: {
+    //     files: [{
+    //       expand: true,
+    //       cwd: '<%= config.src %>/assets/js',
+    //       extDot: 'last',
+    //       src: ['*.js', '!*.min.js'],
+    //       dest: '<%= config.dist %>/assets/js/',
+    //       ext: '.min.js'
+    //     }]
+    //   }
+    // },
+
     uglify: {
+      options: {
+        mangle: {
+          except: ['jQuery']
+        }
+      },
       my_target: {
-        files: [{
-          expand: true,
-          cwd: '<%= config.src %>/assets/js',
-          extDot: 'last',
-          src: ['*.js', '!*.min.js'],
-          dest: '<%= config.dist %>/assets/js/',
-          ext: '.min.js'
-        }]
+        files: {
+          '<%= config.dist %>/assets/js/script.min.js': [
+            '<%= config.src %>/assets/js/jquery-1.11.3.js',
+            '<%= config.src %>/assets/js/jquery.ui.core.js',
+            '<%= config.src %>/assets/js/jquery.ui.widget.js',
+            '<%= config.src %>/assets/js/jquery.ui.rcarousel.js',
+            '<%= config.src %>/assets/js/bootstrap.js',
+            '<%= config.src %>/assets/js/count-up.js',
+            '<%= config.src %>/assets/js/theme.js'
+          ]
+        }
       }
     },
 
